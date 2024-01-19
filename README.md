@@ -6,7 +6,7 @@ I rewrote this tool/research based on EvilMogs tool to further my understanding 
 
 Requirements:
  1. Python 3.9
- 2. ct3_to_ntlm.bin: [https://github.com/hashcat/](https://github.com/hashcat/hashcat-utils)
+ 2. ct3_to_ntlm.bin: [https://github.com/hashcat/](https://github.com/hashcat/hashcat-utils/blob/master/src/ct3_to_ntlm.c)
 
 Credit:
  1. EvilMog (Team Hashcat): [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
