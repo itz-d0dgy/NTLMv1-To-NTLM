@@ -1,12 +1,12 @@
 # NTLMv1 To NTLM
 
-This tool implements EvilMogs research around the conversion of NTLMv1 to NTLM hashes demonstrated in his ntlm_multi.py program. 
+This tool is a rewrite of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike around the conversion of NTLMv1 to NTLM hashes". 
 Whereby it converts NTLMv1/NTLMv1-ESS/MSCHAPv2 hash into its respective DES key parts to be cracked.
-I implemented this research/rewrote EvilMogs tool to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
+I rewrote this tool/research based on EvilMogs tool to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
 
 Credit:
-1. EvilMog (Team Hashcat) #REF: https://github.com/evilmog/
-2. Atom (Team Hashcat) #REF: https://hashcat.net/forum/thread-5832.html
+1. EvilMog (Team Hashcat) #REF: [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
+2. Atom (Team Hashcat) #REF: [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
 
 Example:
 ```
@@ -25,3 +25,4 @@ Hashcat: ./hashcat -w 4 -a 3 -1 DES_full.hcchr --hex-charset deskeys.hash ?1?1?1
 Run: python3 ntlm_multi_d0dgy_rewrite.py --stitch --cracked_des_key_1 X --cracked_des_key_2 X --ntlm_challenge_type_3 BB23EF89F50FC595 --ntlm_challenge 1122334455667788
 //NOTE: The values for ntlm_challenge_type_3 and ntlm_challenge will be in the output file
 ```
+
