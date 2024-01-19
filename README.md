@@ -6,12 +6,12 @@ I rewrote this tool/research based on EvilMogs tool to further my understanding 
 
 Requirements:
  1. Python 3.9
- 2. ct3_to_ntlm.bin: [https://github.com/hashcat/](https://github.com/hashcat/hashcat-utils/blob/master/src/ct3_to_ntlm.c)
+ 2. [ct3_to_ntlm.bin](https://github.com/hashcat/hashcat-utils/blob/master/src/ct3_to_ntlm.c)
 
 Credit:
- 1. EvilMog (Team Hashcat): [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
- 2. Atom (Team Hashcat): [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
- 3. Hashcat: [https://hashcat.net](https://hashcat.net/)
+ 1. [EvilMog (Team Hashcat)](https://github.com/evilmog/ntlmv1-multi)
+ 2. [Atom (Team Hashcat)](https://hashcat.net/forum/thread-5832.html)
+ 3. [Hashcat](https://hashcat.net/)
 
 Example:
 ```
