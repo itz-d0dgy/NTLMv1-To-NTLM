@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 """
-    This tool a re-write of EvilMogs ntlm_multi.py which breaks the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash into its respective parts to be cracked as their respective DES keys.
-    I re-wrote it to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
+    This tool is a rewrite of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike around the conversion of NTLMv1 to NTLM hashes". 
+    Whereby it converts NTLMv1/NTLMv1-ESS/MSCHAPv2 hash into its respective DES key parts to be cracked.
+    I rewrote this tool/research based on EvilMogs tool to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
 
     Credit:
-        1. EvilMog (Team Hashcat) #REF: https://github.com/evilmog/
-        2. Atom (Team Hashcat) #REF: https://hashcat.net/forum/thread-5832.html
+        1. EvilMog (Team Hashcat) #REF: [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
+        2. Atom (Team Hashcat) #REF: [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
     
     Copyright: itz_d0dgy
 """
