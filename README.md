@@ -4,9 +4,12 @@ This tool is a rewrite of EvilMogs ntlmv1-multi tool which was based on "forum p
 Whereby it converts NTLMv1/NTLMv1-ESS/MSCHAPv2 hash into its respective DES key parts to be cracked.
 I rewrote this tool/research based on EvilMogs tool to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
 
+Requirements:
+    1. Python 3.9
+
 Credit:
-1. EvilMog (Team Hashcat) #REF: [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
-2. Atom (Team Hashcat) #REF: [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
+    1. EvilMog (Team Hashcat) #REF: [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
+    2. Atom (Team Hashcat) #REF: [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
 
 Example:
 ```
