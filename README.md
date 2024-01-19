@@ -13,6 +13,8 @@ Example:
 python3 ntlmv1-to-ntlm.py --crack \
     --ntlmv1 itz_d0dgy::D0DGY-1234567:76365E2D142B5612980C67D057EB9EFEEE5EF6EB6FF6E04D:727B4E35F947129EA52B9CDEDAE86934BB23EF89F50FC595:1122334455667788
 
+Upon running the above, there should be a file written to the directory.
+
 #################### Create You Hashlist ####################
 DES Key 1: 727B4E35F947129E:1122334455667788 >> deskeys.hash
 DES Key 2: A52B9CDEDAE86934:1122334455667788 >> deskeys.hash
