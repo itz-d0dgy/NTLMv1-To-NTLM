@@ -29,7 +29,7 @@ Hashtopolis: -a 3 -1 DES_full.hcchr --hex-charset #HL# ?1?1?1?1?1?1?1?1
 Hashcat: ./hashcat -w 4 -a 3 -1 DES_full.hcchr --hex-charset deskeys.hash ?1?1?1?1?1?1?1?1
 
 ####################      Get NTLM      ####################
-Run: python3 ntlm_multi_d0dgy_rewrite.py --stitch --cracked_des_key_1 XXX --cracked_des_key_2 XXX --ntlm_challenge_type_3 XXX --ntlm_challenge XXX
+Run: python3 ntlmv1-to-ntlm.py --stitch --cracked_des_key_1 XXX --cracked_des_key_2 XXX --ntlm_challenge_type_3 XXX --ntlm_challenge XXX
 NOTE: The values for ntlm_challenge_type_3 and ntlm_challenge will be auto populated in the output file, all you need todo is populate the cracked desk keys
 ```
 
