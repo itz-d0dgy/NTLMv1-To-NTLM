@@ -67,17 +67,17 @@ def write_des_keys(user_name, challenge_type_1, challenge_type_2, challenge_type
     try:
         with open(file=f"output_{user_name}.txt", mode="x", encoding="utf8") as steps:
             steps.write("#################### Create You Hashlist ####################\n")
-            steps.write(f"DES Key 1: {challenge_type_1}:{challenge} >> deskeys.hash\n")
-            steps.write(f"DES Key 2: {challenge_type_2}:{challenge} >> deskeys.hash\n")
+            steps.write(f"{challenge_type_1}:{challenge} >> deskeys.hash\n")
+            steps.write(f"{challenge_type_2}:{challenge} >> deskeys.hash\n")
             steps.write("\n")
             steps.write("####################   Cracker Lacking   ####################\n")
             steps.write("Hashtopolis: -a 3 -1 DES_full.hcchr --hex-charset #HL# ?1?1?1?1?1?1?1?1\n")
             steps.write("Hashcat: ./hashcat -w 4 -a 3 -1 DES_full.hcchr --hex-charset deskeys.hash ?1?1?1?1?1?1?1?1\n")
             steps.write("\n")
             steps.write("####################      Get NTLM      ####################\n")
-            steps.write(f"Run: python3 ntlm_multi_d0dgy_rewrite.py --stitch --cracked_des_key_1 X --cracked_des_key_2 X --ntlm_challenge_type_3 {challenge_type_3} --ntlm_challenge {challenge}\n")
+            steps.write(f"Run: python3 ntlmv1-to-ntlm.py --stitch --cracked_des_key_1 X --cracked_des_key_2 X --ntlm_challenge_type_3 {challenge_type_3} --ntlm_challenge {challenge}\n")
         steps.close()
-
+        print("Output file written")
     except FileExistsError:
         print("Hey, so I hate to tell you this but that file already exists.")
         return
