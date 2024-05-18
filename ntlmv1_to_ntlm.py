@@ -23,7 +23,8 @@ if __name__ == "__main__":
 
     function_group = parser.add_mutually_exclusive_group(required=True)
     function_group.add_argument("--get_des_keys", action=BooleanOptionalAction)
-    function_group.add_argument("--get_ntlm", action=BooleanOptionalAction)
+    function_group.add_argument("--get_ntlm", action=BooleanOptionalAction)\
+    
     output_group = parser.add_mutually_exclusive_group()
     output_group.add_argument("--hashcat", action=BooleanOptionalAction)
     output_group.add_argument("--hashtopolis", action=BooleanOptionalAction)
@@ -39,6 +40,8 @@ if __name__ == "__main__":
     if arguments.get_des_keys:
         if arguments.hashcat or arguments.hashtopolis:
             write_file(process_hash(arguments.ntlmv1), arguments.hashcat, arguments.hashtopolis)
+        else:
+            print("\n[!] Please include necessary flags: --hashcat or --hashtopolis")
 
     if arguments.get_ntlm:
         if arguments.cracked_des_key_1 and arguments.cracked_des_key_2 and arguments.ntlm_challenge_type_3 and arguments.ntlm_challenge:
