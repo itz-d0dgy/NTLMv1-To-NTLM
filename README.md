@@ -2,7 +2,7 @@
 This tool is a variant of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike". 
 Whereby it converts NTLMv1/NTLMv1-ESS hashes into its respective DES key parts to be cracked. 
 
-Copyright: itz_d0dgy
+Copyright: Jack Moran
 
 ## Credit:
  1. [EvilMog (Team Hashcat)](https://github.com/evilmog/ntlmv1-multi)
@@ -12,8 +12,6 @@ Copyright: itz_d0dgy
 ## Requirements:
  1. Python 3.12.2
  2. [ct3_to_ntlm.bin](https://github.com/hashcat/hashcat-utils/blob/master/src/ct3_to_ntlm.c)
-
-
 
 ## Example:
 ```
