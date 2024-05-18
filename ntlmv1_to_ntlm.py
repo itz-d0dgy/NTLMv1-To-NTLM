@@ -12,9 +12,9 @@
 """
 
 from argparse import ArgumentParser, BooleanOptionalAction
-from get_des_keys import process_hash
-from write_des_keys import write_file
-from get_ntlm import process_keys
+from modules.get_des_keys import process_hash
+from modules.write_des_keys import write_file
+from modules.get_ntlm import process_keys
 
 if __name__ == "__main__":
 

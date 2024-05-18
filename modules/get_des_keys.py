@@ -26,7 +26,7 @@ def process_hash(ntlmv1_hash):
         if identifiers == "lm_response":
             # If the NTLMv1 is not NTLMv1-ESS/SSP (Client Challenge is Accepted)
             if split_hash[delimiter][20:48] != "0000000000000000000000000000":
-                hash_data["challenge"] = split_hash[delimiter + 2]
+                hash_data["challenge"] = split_hash[delimiter + 2].upper()
                 hash_data["challenge_type_1"] = split_hash[delimiter + 1][0:16]
                 hash_data["challenge_type_2"] = split_hash[delimiter + 1][16:32]
 
