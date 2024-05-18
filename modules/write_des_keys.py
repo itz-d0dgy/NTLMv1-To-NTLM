@@ -28,6 +28,6 @@ def write_file(processed_hash, hashcat_output, hashtopolis_output):
     if hashtopolis_output:
         print("[~] CRACK DES KEYS: -a 3 -1 DES_full.hcchr --hex-charset #HL# ?1?1?1?1?1?1?1?1")
 
-    print(f"[~] FRAME DES KEYS: ./ntlmv1-to-ntlm.py --get_ntlm --cracked_des_key_1 FIRST_KEY --cracked_des_key_2 SECOND_KEY --ntlm_challenge_type_3 {processed_hash['challenge_type_3']} --ntlm_challenge {processed_hash['challenge']}")
+    print(f"[~] FRAME DES KEYS: ./ntlmv1_to_ntlm.py --get_ntlm --cracked_des_key_1 FIRST_KEY --cracked_des_key_2 SECOND_KEY --ntlm_challenge_type_3 {processed_hash['challenge_type_3']} --ntlm_challenge {processed_hash['challenge']}")
 
     print("[!] PLEASE BE AWARE THE DES KEY FILE HAS THE KEYS ORDERED AND WHEN CRACKED THE ORDER MUST BE MAINTAINED :)")
