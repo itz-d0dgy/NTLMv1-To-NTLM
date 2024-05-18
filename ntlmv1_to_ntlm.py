@@ -41,5 +41,5 @@ if __name__ == "__main__":
             write_file(process_hash(arguments.ntlmv1), arguments.hashcat, arguments.hashtopolis)
 
     if arguments.get_ntlm:
-        if arguments.cracked_des_key_1 or arguments.cracked_des_key_2 or arguments.ntlm_challenge_type_3 or arguments.ntlm_challenge:
+        if arguments.cracked_des_key_1 and arguments.cracked_des_key_2 and arguments.ntlm_challenge_type_3 and arguments.ntlm_challenge:
             process_keys(arguments.cracked_des_key_1, arguments.cracked_des_key_2, arguments.ntlm_challenge_type_3, arguments.ntlm_challenge)
