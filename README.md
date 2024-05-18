@@ -1,19 +1,23 @@
 # NTLMv1 To NTLM
+This tool is a variant of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike". 
+Whereby it converts NTLMv1/NTLMv1-ESS hashes into its respective DES key parts to be cracked. 
 
-This tool is a rewrite of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike around the conversion of NTLMv1 to NTLM hashes". Whereby it converts NTLMv1/NTLMv1-ESS/MSCHAPv2 hash into its respective DES key parts to be cracked.
+Credit:
+ 1. EvilMog (Team Hashcat) #REF: [https://github.com/evilmog/](https://github.com/evilmog/ntlmv1-multi)
+ 2. Atom (Team Hashcat) #REF: [https://hashcat.net](https://hashcat.net/forum/thread-5832.html)
+    
+Copyright: itz_d0dgy
 
-I wrote my own version of this tool based of off EvilMogs tool and research to further my understanding of the NTLMv1/NTLMv1-ESS/MSCHAPv2 hash and make it a bit more usable for myself.
-
-Requirements:
+## Requirements:
  1. Python 3.12.2
  2. [ct3_to_ntlm.bin](https://github.com/hashcat/hashcat-utils/blob/master/src/ct3_to_ntlm.c)
 
-Credit:
+## Credit:
  1. [EvilMog (Team Hashcat)](https://github.com/evilmog/ntlmv1-multi)
  2. [Atom (Team Hashcat)](https://hashcat.net/forum/thread-5832.html)
  3. [Hashcat](https://hashcat.net/)
 
-Example:
+## Example:
 ```
 // Step 0 - Test Hashes:
 NTLMv1: itz_d0dgy::D0DGY-1234567:76365E2D142B5612980C67D057EB9EFEEE5EF6EB6FF6E04D:727B4E35F947129EA52B9CDEDAE86934BB23EF89F50FC595:1122334455667788
