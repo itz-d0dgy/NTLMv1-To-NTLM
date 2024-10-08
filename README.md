@@ -2,7 +2,7 @@
 This tool is a variant of EvilMogs ntlmv1-multi tool which was based on "forum posts by atom the author of hashcat and research by moxie marlinspike". 
 Whereby it converts NTLMv1/NTLMv1-ESS hashes into its respective DES key parts to be cracked. 
 
-Copyright: Jack Moran
+I created this variant to further my own understanding of NTLM. Feel free to use :).
 
 ## Credit:
  1. [EvilMog (Team Hashcat)](https://github.com/evilmog/ntlmv1-multi)
